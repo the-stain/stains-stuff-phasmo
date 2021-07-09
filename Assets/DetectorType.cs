@@ -6,4 +6,5 @@ public class DetectorType : ScriptableObject
 {
     float detectPingInterval; // allows for a custom rate of detection querying
 
+
 }
