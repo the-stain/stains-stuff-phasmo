@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Detector : MonoBehaviour
 {
@@ -13,11 +14,12 @@ public class Detector : MonoBehaviour
     private Ray ray;
     private Anomaly currentReceiver;
     public float anomalyTemp;
+    public Text tempDisplayUI;
 
     // Update is called once per frame
     void Update()
     {
-        
+        CheckRaycast();
     }
 
     private void CheckRaycast()
@@ -25,10 +27,9 @@ public class Detector : MonoBehaviour
         ray = new Ray(rayOrigin.transform.position, rayOrigin.transform.forward);
 
         RaycastHit hit;
+
         if (Physics.Raycast(ray, out hit))
         {
-
-
             if (hit.distance < minInteractionDistance)
             {
 
@@ -37,7 +38,7 @@ public class Detector : MonoBehaviour
 
                 if (currentReceiver != null)
                 {
-                    anomalyTemp = currentReceiver.GetComponent<Anomaly>().floatValue;
+                    anomalyTemp = currentReceiver.GetComponent<Anomaly>().temp;
                 }
             }
         }

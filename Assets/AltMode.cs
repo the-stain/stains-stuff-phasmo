@@ -11,7 +11,7 @@
 public class AltMode : MonoBehaviour, IAction
 {
     // controlTarget SHOULD be a child of this script's object, but it COULD be something else technically
-    // That seems insecure, but I like the potential for greater functionality in the future
+    // That seems insecure, but I'd rather not restrict the type without good reason
     GameObject controlTarget;
     bool isModeOn;
 
