@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /*
- * A Scriptable Object for all the Equipment that can be bought by players and brought on contracts.
+ * A Scriptable Object for defining all of the Equipment that can be bought by players and brought on contracts.
  */
 public class EquipmentType : ScriptableObject
 {

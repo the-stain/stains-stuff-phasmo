@@ -3,6 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+
+/*
+ * Detector.cs allows for detection of anomalies, ideally by both Equipment objects and Ghosts.
+ * Currently built just for temp anomalies for the purpose of understanding how to use raycasts.
+ */
+
 public class Detector : MonoBehaviour
 {
     [SerializeField]
@@ -14,7 +20,6 @@ public class Detector : MonoBehaviour
     private Ray ray;
     private Anomaly currentReceiver;
     public float anomalyTemp;
-    public Text tempDisplayUI;
 
     // Update is called once per frame
     void Update()
@@ -42,7 +47,5 @@ public class Detector : MonoBehaviour
                 }
             }
         }
-
-
     }
 }
