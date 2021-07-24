@@ -7,7 +7,7 @@ using UnityEngine;
  * with Detectors to provide some form of information based on the specific DetectorType, which then informs Detector on how to calculate any received
  * values. Detector outputs the final value as a return, allowing it to be picked up by UI elements or even other things.
  * 
- * This class can be modified in the future to accommodate different types of Anomaly (most l
+ * Currently written directly for Temperature anomalies for the purpose of testing/experimenting with Raycasts.
  */
 public class Anomaly : MonoBehaviour
 {
