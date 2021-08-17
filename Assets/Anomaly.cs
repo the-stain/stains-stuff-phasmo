@@ -9,6 +9,7 @@ using UnityEngine;
  * 
  * Currently written directly for Temperature anomalies for the purpose of testing/experimenting with Raycasts.
  */
+
 public class Anomaly : MonoBehaviour
 {
     public float temp;

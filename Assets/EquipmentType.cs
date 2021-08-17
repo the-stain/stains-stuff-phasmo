@@ -5,10 +5,15 @@ using UnityEngine;
 /*
  * A Scriptable Object for defining all of the Equipment that can be bought by players and brought on contracts.
  */
+[CreateAssetMenu(fileName = "New Equipment Type", menuName = "Equipment")]
 public class EquipmentType : ScriptableObject
 {
-    string displayName;
-    Mesh displayMesh;
-    int storeCost;
-    int missionMax;
+    public string displayName;
+    public Mesh displayMesh;
+    public int storeCost;
+    public int missionMax;
+
+    [TextArea(5,15)]
+    public string description;
+
 }

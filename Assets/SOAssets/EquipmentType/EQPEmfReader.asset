@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b63e3507edd4a1d4c980f037c9681bb7, type: 3}
+  m_Name: EQPEmfReader
+  m_EditorClassIdentifier: 
+  displayName: EMF Reader
+  displayMesh: {fileID: 0}
+  storeCost: 45
+  missionMax: 2
+  description: The Electromagnetic Field Reader is a handheld device used to detect
+    fluctuations in electromagnetic fields left behind by paranormal activity. It
+    will beep with increasing volume depending on the amount of activity nearby.
