@@ -13,15 +13,21 @@ using UnityEngine.UI;
 
 public class ShopDisplay : MonoBehaviour
 {
+    public ListSO equipList;
+    public Text nameBox;
+    public Text descBox;
 
     // Start is called before the first frame update
     void Start()
     {
-        
-       // string[] equipmentTypes = AssetDatabase.FindAssets("t:EquipmentType", new[] { "Assets/SOAssets/EquipmentType" });
-
 
     }
 
+    void DisplayListItem(EquipmentType e, int n)
+    {
+        nameBox.text = e.displayName;
+        descBox.text = e.description;
+
+    }
 
 }
