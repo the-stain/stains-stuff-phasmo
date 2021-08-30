@@ -23,7 +23,7 @@ public class ShopDisplay : MonoBehaviour
 
     }
 
-    void DisplayListItem(EquipmentType e, int n)
+    public void DisplayListItem(EquipmentType e, int n)
     {
         nameBox.text = e.displayName;
         descBox.text = e.description;

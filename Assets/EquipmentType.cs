@@ -12,6 +12,7 @@ public class EquipmentType : ScriptableObject
     public Mesh displayMesh;
     public int storeCost;
     public int missionMax;
+    public int correspondsTo; // the variable in PlayerData.cs to which this SO corresponds
 
     [TextArea(5,15)]
     public string description;

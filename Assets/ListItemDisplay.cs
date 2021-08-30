@@ -20,7 +20,7 @@ public class ListItemDisplay : MonoBehaviour
     void CreateListItem(EquipmentType t)
     {
         GameObject itemSlot = Instantiate(listItemPrefab, listItemViewport);
-        itemSlot.GetComponent<Button>().onClick.AddListener(delegate { });
+        itemSlot.GetComponent<Button>().onClick.AddListener(delegate {FindObjectOfType<ShopDisplay>().DisplayListItem(t, });
 
     }
 }
